@@ -1,0 +1,165 @@
+﻿* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-image: linear-gradient( 89.5deg, rgba(131,204,255,1) 0.4%, rgba(66,144,251,1) 100.3% );
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.columna {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 40px;
+}
+
+#imgLogo {
+    width: 200px;
+    height: 200px;
+}
+
+h2 {
+    color: rgb(0, 126, 167);
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#txtUser, #txtContraseña {
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #5e5e5e;
+    outline: none;
+    text-align: center;
+}
+
+/*input[type="text"] {
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #5e5e5e;
+    outline: none;
+    text-align: center;
+}
+
+input[type="password"] {
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #5e5e5e;
+    outline: none;
+    text-align: center;
+}*/
+
+.Credenciales {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+    .group i {
+        position: absolute;
+        top: 0px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .group input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        padding: 10px;
+    }
+
+
+.btnIniciarSesion {
+    transition: background-color 0.5s ease;
+    width: 250px;
+    height: 40px;
+    background-color: #003249;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Botones {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    margin: 30px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    color: #5e5e5e;
+}
+
+    a::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #5e5e5e;
+        /*Animacion de derecha a izquierda*/
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    a:hover:after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
